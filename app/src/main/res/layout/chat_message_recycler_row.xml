@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+    <LinearLayout
+        android:id="@+id/leftChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_received_chat"
+        android:backgroundTint="#1E88E5"
+        android:padding="8dp"
+        android:layout_marginEnd="80dp">
+        <TextView
+            android:id="@+id/leftChatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, how are you?"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rightChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_sent_chat"
+        android:backgroundTint="#7CB342"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp"
+        android:layout_marginStart="80dp">
+        <TextView
+            android:id="@+id/rightChatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I am fine."
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</RelativeLayout>
